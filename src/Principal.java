@@ -6,7 +6,7 @@ public class Principal {
 
         Audio musica = new Audio();
         musica.setTitulo("Do I Wanna Know");
-        musica.setDuracaoEmSegundos(231);
+        musica.setDuracaoEmMinutos(231);
         musica.reproduzir();
         musica.curtir();
         musica.exibeInformacoes();
