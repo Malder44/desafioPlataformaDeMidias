@@ -1,4 +1,4 @@
-package malder.desafioPlataformaDeMusicas.midias;
+package borges.leonorico.desafioPlataformaDeMusicas.midias;
 
 public class Audio {
 
@@ -54,11 +54,9 @@ public class Audio {
     }
 
     public void exibeInformacoes() {
-        System.out.println("Nome do áudio: " + this.getTitulo());
-        System.out.println("Duração do áudio: " + this.getDuracaoEmMinutos() + " segundos");
-        System.out.println("Número de reproduções do áudio: " + this.getTotalDeReproducoes());
-        System.out.println("Número de curtidas do áudio: " + this.getNumeroDeCurtidas());
-        System.out.println("Nota do áudio: " + this.getClassificacao() + "/10");
+        System.out.println("Número de reproduções: " + this.getTotalDeReproducoes());
+        System.out.println("Número de curtidas: " + this.getNumeroDeCurtidas());
+        System.out.println("Nota: " + this.getClassificacao() + "/10\n");
     }
 
     //TODO: Futuramente criar os métodos compartilhar, guardar no álbum...

@@ -1,4 +1,4 @@
-package malder.desafioPlataformaDeMusicas.midias;
+package borges.leonorico.desafioPlataformaDeMusicas.midias;
 
 public class Musica extends Audio{
 
@@ -37,5 +37,16 @@ public class Musica extends Audio{
 
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    @Override
+    public void exibeInformacoes() {
+        System.out.println("Nome da música: " + this.getTitulo());
+        System.out.println("Banda: " + this.getBanda());
+        System.out.println("Álbum: " + this.getAlbum());
+        System.out.println("Gênero: " + this.getGenero());
+        System.out.println("Ano de lançamento: " + this.getAnoDeLancamento());
+        System.out.println("Duração: " + this.getDuracaoEmMinutos() + " minutos");
+        super.exibeInformacoes();
     }
 }

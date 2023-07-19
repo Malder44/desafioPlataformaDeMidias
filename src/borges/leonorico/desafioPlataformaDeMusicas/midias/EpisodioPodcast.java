@@ -1,4 +1,4 @@
-package malder.desafioPlataformaDeMusicas.midias;
+package borges.leonorico.desafioPlataformaDeMusicas.midias;
 
 public class EpisodioPodcast extends Audio {
 
@@ -28,5 +28,15 @@ public class EpisodioPodcast extends Audio {
 
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    @Override
+    public void exibeInformacoes() {
+        System.out.println("Nome do episódio: " + this.getTitulo());
+        System.out.println("Nome do podcast: " + this.getNomePodcast());
+        System.out.println("Número do episódio: " + this.getNumeroEpisodio());
+        System.out.println("Ano de lançamento: " + this.getAnoDeLancamento());
+        System.out.println("Duração: " + this.getDuracaoEmMinutos() + " minutos");
+        super.exibeInformacoes();
     }
 }
