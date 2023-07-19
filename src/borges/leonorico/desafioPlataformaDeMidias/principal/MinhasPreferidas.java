@@ -1,6 +1,6 @@
-package borges.leonorico.desafioPlataformaDeMusicas.principal;
+package borges.leonorico.desafioPlataformaDeMidias.principal;
 
-import borges.leonorico.desafioPlataformaDeMusicas.midias.Audio;
+import borges.leonorico.desafioPlataformaDeMidias.midias.Audio;
 
 public class MinhasPreferidas {
 

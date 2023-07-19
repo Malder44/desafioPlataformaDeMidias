@@ -1,4 +1,4 @@
-package borges.leonorico.desafioPlataformaDeMusicas.midias;
+package borges.leonorico.desafioPlataformaDeMidias.midias;
 
 public class EpisodioPodcast extends Audio {
 

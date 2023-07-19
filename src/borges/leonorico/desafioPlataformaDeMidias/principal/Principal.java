@@ -1,7 +1,7 @@
-package borges.leonorico.desafioPlataformaDeMusicas.principal;
+package borges.leonorico.desafioPlataformaDeMidias.principal;
 
-import borges.leonorico.desafioPlataformaDeMusicas.midias.EpisodioPodcast;
-import borges.leonorico.desafioPlataformaDeMusicas.midias.Musica;
+import borges.leonorico.desafioPlataformaDeMidias.midias.EpisodioPodcast;
+import borges.leonorico.desafioPlataformaDeMidias.midias.Musica;
 
 public class Principal {
 
