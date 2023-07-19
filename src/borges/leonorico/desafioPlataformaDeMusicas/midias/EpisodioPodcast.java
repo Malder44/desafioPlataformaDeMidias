@@ -31,6 +31,20 @@ public class EpisodioPodcast extends Audio {
     }
 
     @Override
+    public int getClassificacao() {
+        if(getNumeroDeCurtidas() >= 10000 && getNumeroDeCurtidas() < 50000) {
+            return 3;
+        } else if(getNumeroDeCurtidas() >= 50000 && getNumeroDeCurtidas() < 100000) {
+            return 6;
+        } else if(getNumeroDeCurtidas() >= 100000) {
+            return 10;
+        }
+        return 1;
+
+        //TODO: Aprimorar a forma de calcular a classificação
+    }
+
+    @Override
     public void exibeInformacoes() {
         System.out.println("Nome do episódio: " + this.getTitulo());
         System.out.println("Nome do podcast: " + this.getNomePodcast());

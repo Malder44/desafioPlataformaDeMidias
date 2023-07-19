@@ -1,6 +1,6 @@
 package borges.leonorico.desafioPlataformaDeMusicas.midias;
 
-public class Musica extends Audio{
+public class Musica extends Audio {
 
     private String genero;
     private String banda;
@@ -37,6 +37,20 @@ public class Musica extends Audio{
 
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    @Override
+    public int getClassificacao() {
+        if(getTotalDeReproducoes() >= 10000 && getTotalDeReproducoes() < 50000) {
+            return 3;
+        } else if(getTotalDeReproducoes() >= 50000 && getTotalDeReproducoes() < 100000) {
+            return 6;
+        } else if(getTotalDeReproducoes() >= 100000) {
+            return 10;
+        }
+        return 1;
+
+        //TODO: Aprimorar a forma de calcular a classificação
     }
 
     @Override

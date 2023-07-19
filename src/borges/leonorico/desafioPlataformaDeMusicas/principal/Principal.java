@@ -1,3 +1,5 @@
+package borges.leonorico.desafioPlataformaDeMusicas.principal;
+
 import borges.leonorico.desafioPlataformaDeMusicas.midias.EpisodioPodcast;
 import borges.leonorico.desafioPlataformaDeMusicas.midias.Musica;
 
@@ -21,5 +23,17 @@ public class Principal {
         episodio1.setAnoDeLancamento(2022);
         episodio1.setDuracaoEmMinutos(50);
         episodio1.exibeInformacoes();
+
+        for(int i = 0; i < 30000; i++) {
+            faixa1.reproduzir();
+        }
+
+        for(int i = 0; i < 110000; i++) {
+            episodio1.curtir();
+        }
+
+        MinhasPreferidas preferidas = new MinhasPreferidas();
+        preferidas.inclui(faixa1);
+        preferidas.inclui(episodio1);
     }
 }
